@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    max-width: 1115px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    padding: 20px 0px;
+}
+
+a{
+    color: white;
+}
+
+.btn{
+    padding: 15px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    columns: #ffffff;
+}
+
+
+.btn.primary-btn{
+    background-color:#231A36;
+}
+
+.btn.secondary-btn{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sec-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sec-heading h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #231A36;
+}
+
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.header-wrapper nav{
+    display: flex;
+    gap: 30px;
+}
+
+main{
+    background: url("./img/banner/bg.png") center no-repeat;
+    background-size: cover;
+}
+
+.banner-wrapper{
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner{
+    padding: 100px 0px;
+}
+
+.banner-wrapper h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    
+}
+
+.banner-wrapper p{
+    margin-bottom: 50px;
+}
+
+.clients{
+    padding: 80px 0px;
+}
+.sec-heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.clients-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.clients-wrapper > div{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* solution */
+
+.solution{
+    padding: 0px 0px;
+}
+
+.solution .container{
+    max-width: 750px;
+}
+
+.solution-wrapper{
+    margin-top: 50px;
+}
+
+.solution-wrapper > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    margin: 10px 0px;
+}
+
+.solution-wrapper > div > div{
+    
+    width: 50%;
+    margin: 5px 0px;
+}
+
+.solution-wrapper a{
+    color:#231A36;
+}
+
+.solution-wrapper > div > div h4{
+    margin: 5px 0;
+}
+.solution-wrapper > div > div p{
+    margin-bottom: 5px;
+}
+.solution-wrapper > div > div span {
+    font-size: 300;
+    color: #DE2879;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.sec-heading h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.solution-wrapper > div > div:nth-child(2){
+    text-align: right;
+}
+
+
+.solution-wrapper div:nth-child(2) > div:nth-child(2){
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* history */
+
+.history{
+    background-color: #231A36;
+    margin: 20px 0px;
+    color: white;
+}
+.history-wrapper{
+    padding: 100px 0px;
+}
+.history-wrapper >div:nth-child(1){
+    text-align: center;
+    margin: 10px;
+}
+.history-wrapper >div:nth-child(2){
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 5px;
+}
+.history-wrapper >div:nth-child(2) > div{
+    
+    align-items: center;
+}
+
+.history-wrapper p{
+    color: #7B9292;
+}
+
+/* views */
+
+.views{
+    padding: 20px;
+    
+
+}
+
+.views .container{
+    max-width: 1115px;
+}
+
+.views-wrapper{
+    display: flex;
+    gap: 20px;
+    max-width: 300;
+}
+
+.views-wrapper > div > div{
+    position: relative;
+    width: 20%;
+}
+
+.views-wrapper > div > div > div{
+    position: absolute;
+}
+
+.views-wrapper > div > div{
+   position: relative;
+}
+.views-wrapper > div > div > div{
+    position: absolute;
+    left: -70px;
+    top: 200px;
+ }
+
+
+@media only screen and (min-width:1000px){
+    .line-break{
+        display: block;
+    }
+
+    .banner-wrapper h1{
+        font-size: 94px;
+    }
+    .clients-wrapper > div{
+        width: 15% !important;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .btn.secondary-btn{
+        display: block;
+    }
+    
+}
+
+@media only screen and (min-width:567px){
+    .header-wrapper{
+        flex-direction: row;
+    }
+    .clients-wrapper > div{
+        width: 50%;
+    }
+    .solution-wrapper > div{
+        flex-direction: row;
+    }
+}
+
+
+
+
