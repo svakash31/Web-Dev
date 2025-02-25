@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - CampusExchange</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h2>Upload Study Materials</h2>
+        <div id="folders"></div>
+        <button class="btn btn-primary mt-3" onclick="createFolder()">Add Folder</button>
+    </div>
+    
+    <script>
+        function createFolder() {
+            let folderName = prompt("Enter folder name (e.g., Semester 1)");
+            if (folderName) {
+                let folder = document.createElement("div");
+                folder.classList.add("folder");
+                folder.innerHTML = `<strong>${folderName}</strong> <button class='btn btn-sm btn-success' onclick='uploadFile(this)'>Upload</button>`;
+                document.getElementById("folders").appendChild(folder);
+            }
+        }
+        
+        function uploadFile(button) {
+            let input = document.createElement("input");
+            input.type = "file";
+            input.onchange = () => alert("File uploaded!");
+            input.click();
+        }
+    </script>
+    
+    <footer class="bg-primary text-white text-center py-3">
+        <p>© 2025 CampusExchange. All rights reserved.</p>
+    </footer>
+</body>
+</html>
