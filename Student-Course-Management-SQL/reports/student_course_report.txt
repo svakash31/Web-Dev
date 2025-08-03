@@ -1,0 +1,8 @@
+Student-Course Report
+
+Akash - Data Structures (Grade: A)
+Divya - Data Structures (Grade: B)
+Akash - DBMS (Grade: A)
+
+Top Students:
+Akash (2 A's)
